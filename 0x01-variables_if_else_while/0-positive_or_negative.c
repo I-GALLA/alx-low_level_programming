@@ -1,11 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
- * Description : main prints a random number (positive,negative,zero)
- * Return : return always 0
-*/
+ * main - Entry point
+ * Description: main prints a random number (positive,negative,zero)
+ * Return: Always 1 if Success
+ */
 int main(void)
 {
 	int n;
