@@ -2,32 +2,21 @@
 /**
  * main - Entry point
  * Description: main prints all possible
- * different combinations of two digits.
+ * of single-digit numbers.
  * Return: Always 0 if Success
  */
 int main(void)
 {
-	int i, j, k;
+	int i = 0;
 
-	i = 0;
-
-	while (i < 100)
+	while (i < 10)
 	{
-		j = i % 10; /* singles digit */
-		k = i / 10; /* doubles digit */
-
-		if (k < j)
+		putchar(i + '0');
+		if (i < 9)
 		{
-			putchar(k + '0');
-			putchar(j + '0');
-
-			if (i < 89)
-			{
-				putchar(44);
-				putchar(32);
-			}
+			putchar(44);
+			putchar(32);
 		}
-
 		i++;
 	}
 	putchar('\n');
