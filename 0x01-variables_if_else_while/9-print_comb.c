@@ -1,25 +1,34 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: main prints all possible combinations
- * of single-digit numbers.
+ * Description: main prints all possible
+ * different combinations of two digits.
  * Return: Always 0 if Success
  */
 int main(void)
 {
-	int i = 0;
+	int i, j, k;
 
-	while (i < 10)
+	i = 0;
+	while (i < 100)
 	{
-		putchar(i + '0');
-		if (i < 9)
+		j = i % 10;
+		k = i / 10;
+
+		if (k < j)
 		{
-			putchar(44);
-			putchar(32);
+			putchar(k + '0');
+			putchar(j + '0');
+			if (i < 89)
+			{
+				putchar(44);
+				putchar(32);
+			}
 		}
 		i++;
 	}
 	putchar('\n');
 	return (0);
 }
+
 
