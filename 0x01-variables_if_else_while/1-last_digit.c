@@ -3,7 +3,8 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: Prints the last digit of a randomly generated number (a>5,a<6,a<0)
+ * Description: Prints the last digit of a 
+ * randomly generated number (a>5,a<6,a<0)
  * Return: Always 0 if Success
  */
 int main(void)
