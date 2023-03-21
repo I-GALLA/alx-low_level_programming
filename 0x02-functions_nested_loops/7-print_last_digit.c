@@ -6,10 +6,10 @@
  * @n: character to be checked.
  * Return: the value of the last digit.
  */
-int print_last_digit(int n)
+int print_last_digit(n)
 {
 	if (n < 0)
 		n = n * -1;
-	putchar((n % 10) + '0');
+	_putchar((n % 10) + '0');
 	return (n % 10);
 }
