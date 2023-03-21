@@ -6,7 +6,7 @@
  * @n: character to be checked.
  * Return: the value of the last digit.
  */
-int print_last_digit(n)
+int print_last_digit(int n)
 {
 	if (n < 0)
 		n = n * -1;
