@@ -3,6 +3,7 @@
 /**
  * print_sign - Entry point
  * Description: prints the sign of a number.
+ * @n: character to be checked.
  * Return: 1 and prints + if n > zero
  * 0 and prints 0 if n = zero
  * -1 and prints - if n < zero
